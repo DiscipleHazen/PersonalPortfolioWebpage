@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+}
+header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 3px orange;
+}
+figure {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.profile-pic {
+    height: 60px;
+    width: 100px;
+    margin-left: 15px;
+    border: 1.2px solid white;
+}
+.username {
+    position: relative;
+    left: 20px;
+    font-size: 2rem;
+    padding:5px;
+}
+#navbar {
+    width: 40%;
+    height: inherit;
+    align-content: center;
+    margin-right: 30px;
+}
+#navbar ul {
+    display: flex;
+    
+}
+#navbar li {
+    display: inline-block;
+    width: 90px;
+    margin: 0 3px;
+}
+#navbar li a {
+    text-decoration: none;
+    color: white;
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#welcome-section {
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid orange;
+}
+#welcome-section img {
+    height: 275px;
+    width: 275px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border:2px solid orange;
+}
+#welcome-section p {
+    margin: 25px 0 30px 60px;
+    width: 375px;
+}
+#my-work {
+    min-height: 600px;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.grid-work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 900px;
+    margin: 0 auto;
+}
+.project-tile{
+    height: 300px;
+    width: 250px;
+    background-color: black;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid orange;
+    box-shadow: 0px 1px 20px black;
+}
+.project-tile h4 {
+    text-align: center;
+    border-bottom: 1px solid orange;
+}
+.project-tile img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+}
+.project-tile button {
+    display: block;
+    width: 235px;
+    height: 45px;
+    background-color: gold;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.project-tile a {
+    text-decoration: none;
+    color: black;
+}
+#contact-info {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid orange;
+}
+.contact-box {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.contact-box p, .contact-box a{
+    margin: 20px;
+    display: block;
+    text-decoration: none;
+
+}
+@media (max-width: 900px) {
+    #my-work {
+        min-height: 950px;
+    }
+    .grid-work {
+        width: 600px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project-tile{
+        height: 250px;
+        width: 200px;
+    }
+    .project-tile img{
+        height: 160px;
+        width: 175px;
+
+    }
+    .project-tile button {
+        height: 30px;
+        width: 190px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #navbar ul {
+        width: 220px;
+        position: relative;
+        left: -20px;
+    }
+    #navbar li {
+        margin: 0 5px;
+        width: 60px;
+        text-align: center;
+    }
+    header figure {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 200px;
+    }
+    .profile-pic {
+        max-width: 75px;
+        max-height: 75px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    header .username {
+        font-size: 1rem;
+    }
+    .grid-work {
+        width: 270px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

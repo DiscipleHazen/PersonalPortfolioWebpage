@@ -191,6 +191,10 @@ main {
         margin-top: 10px;
         margin-left: 40px;
     }
+    #welcome-section p {
+        width: 275px;
+        margin-right: 30px;
+    }
     header .username {
         font-size: 1rem;
     }
